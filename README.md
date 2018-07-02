@@ -13,3 +13,7 @@ django-admin startproject <entername>
 cd <entername>
 manage.py runserver
  go to browser
+
+
+
+manage.py migrate

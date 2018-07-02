@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>React App</title>
+    
+  </head>
+  <body>
+
+
+
+  	
+<h1>Hello {{title}}   my </h1>  
+
+
+{% for obj in object_list %}
+  {% url "detail" id=obj.id%}
+  <a href='{{ obj.get_absolute_url }}'>{{obj.title}}<br/></a>
+  {{obj.content}}<br/>
+  {{obj.timestamp}}<br/>
+  {{obj.updated}}<br/>
+  {{obj.id}}<br/>
+{% endfor %}
+
+  
+</body>
+</html>
+           
